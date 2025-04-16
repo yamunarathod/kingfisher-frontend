@@ -10,6 +10,7 @@ import ResultScreen from "./pages/ResultScreen";
 import QrCodeScreen from "./pages/QrCodeScreen";
 import ThankYouScreen from "./pages/ThankYouScreen";
 import "./styles/global.css";
+import PrintImage from "./pages/printImage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           path="/character-selection"
           element={<CharacterSelectionScreen />}
         />
+            <Route path="/print-image" element={<PrintImage />} />
         <Route path="/capture" element={<CaptureScreen />} />
         <Route path="/processing" element={<ProcessingScreen />} />
         <Route path="/result" element={<ResultScreen />} />
